@@ -6,11 +6,11 @@ const mocks = {
     tracksForHome: () => [...new Array(6)],
   }),
   Track: () => ({
-    id: () => "track_01",
-    title: () => "Astro Kitty, Space Explorer",
+    id: () => "0101",
+    title: () => "Astro CAT, Space Explorer",
     author: () => {
       return {
-        name: "Grumpy Cat",
+        name: "Adorable Cat",
         photo:
           "https://res.cloudinary.com/dety84pbu/image/upload/v1606816219/kitty-veyron-sm_mctf3c.jpg",
       };
@@ -21,7 +21,6 @@ const mocks = {
     modulesCount: () => 6,
   }),
 };
-
 const server = new ApolloServer({ typeDefs, mocks });
 
 server.listen().then(() => {

@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import GlobalStyles from './styles';
-import Pages from './pages';
+import React from "react";
+import ReactDOM from "react-dom";
+import GlobalStyles from "./styles";
+import Pages from "./pages";
+import { ApolloClient, inMemoryCache, ApolloProvider } from "@apollo/client";
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
     <Pages />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

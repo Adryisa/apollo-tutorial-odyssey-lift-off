@@ -17,6 +17,16 @@ const typeDefs = gql`
     name: String!
     photo: String
   }
+
+  """
+  Remember, we don't have multiple specific endpoints
+  to target different types like a REST API does.
+  Instead, we define a special Query type.
+  """
+  type Query {
+    "Get the tracks arrays for homepage grid"
+    tracksForHome: [Track!]
+  }
 `;
 
 module.exports = typeDefs;
